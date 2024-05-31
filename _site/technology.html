@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Space Tourism | Technology</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  
+    <script>
+        function fadePage() {
+          let mainEl = document.getElementById("main");
+          mainEl.style.opacity = "1";
+        }
+    </script>
+
+    <style>
+      body {
+
+        background: no-repeat top right/cover url(/assets/technology/background-technology-desktop.jpg);
+        background-color: #0B0D17;
+      }
+
+      main {
+        opacity: 0;
+        transition: opacity 400ms ease-in; 
+      }
+
+      @media screen and (max-width: 1100px) {
+          body {
+              background: no-repeat top right/cover url(/assets/technology/background-technology-tablet.jpg);
+          }
+      }
+
+      @media screen and (max-width: 700px) {
+          body {
+              background: no-repeat top right/cover url(/assets/technology/background-technology-mobile.jpg);
+          }
+      }
+    </style>
+  
+  </head>
+  <body onload="fadePage()">
+    <nav class="nav-grid-container">
+    <img src="assets/shared/logo.svg" alt="">
+    <hr class="nav-grid-overlap">
+    <ul class="main-navigation-flexbox">
+      <li class="navigation-text main-navigation-item"><a href="index.html"><bold class="navigation-text-bold">00 </bold>Home</a></li>
+      <li class="navigation-text main-navigation-item"><a href="destinations.html"><bold class="navigation-text-bold">01 </bold>Destinations</a></li>
+      <li class="navigation-text main-navigation-item"><a href="crew.html"><bold class="navigation-text-bold">02 </bold>Crew</a></li>
+      <li class="navigation-text main-navigation-item"><a href="technology.html"><bold class="navigation-text-bold">03 </bold>Technology</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <div class="mobile-nav-container">
+      <img class="mobile-nav-logo" src="assets/shared/logo.svg" alt="">
+      <img class="mobile-nav-hamburger" src="assets/shared/icon-hamburger.svg" alt="">
+    </div>
+    <div class="mobile-nav-dropdown">
+      <ul>
+        <li class="navigation-text mobile-navigation-item"><a href="index.html"><bold class="navigation-text-bold">00 </bold>Home</a></li>
+        <li class="navigation-text mobile-navigation-item"><a href="destinations.html"><bold class="navigation-text-bold">01 </bold>Destinations</a></li>
+        <li class="navigation-text mobile-navigation-item"><a href="crew.html"><bold class="navigation-text-bold">02 </bold>Crew</a></li>
+        <li class="navigation-text mobile-navigation-item"><a href="technology.html"><bold class="navigation-text-bold">03 </bold>Technology</a></li>  
+      </ul>
+    </div>
+  </nav>
+    <main id="main">  <div class="container">
+    <h1 class="is-page-title headingXS is-clr-primary-600 is-uppercase"><bold class="is-bold has-opacity-25">03</bold>Space launch 101</h1>
+  </div>
+
+
+    <div class="tech-slider-container">
+      <img id="techSliderImg" class="tech-slider-img" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+      <div>
+        <ol id="techSliderList" class="tech-slider-list">
+          <!-- List items added with JS-->
+        </ol>
+        <div class="tech-slider-text">
+          <div>
+            <h2 class="headingS has-opacity-50 is-clr-primary-600 is-uppercase">The terminology...</h2> <!-- DOESNT CHANGE WITH JS -->
+            <h3 id="techSliderTitle" class="headingM is-clr-primary-600 is-uppercase">Space capsule</h3>
+          </div>
+          <p id="techSliderDescription" class="body-text is-clr-primary-500">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+            you'll spend your time during the flight. It includes a space gym, cinema,
+            and plenty of other activities to keep you entertained.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  <script type="module" src="/assets/js/technology.js"></script></main>
+    <script type="module" src="/assets/js/mobile-navigation.js"></script>
+  </body>
+</html>
+
+  

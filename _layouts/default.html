@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ site.title }} | {{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  
+    <script>
+        function fadePage() {
+          let mainEl = document.getElementById("main");
+          mainEl.style.opacity = "1";
+        }
+    </script>
+
+    <style>
+      body {
+
+        background: no-repeat top right/cover url({{page.desktop-background-url}});
+        background-color: #0B0D17;
+      }
+
+      main {
+        opacity: 0;
+        transition: opacity 400ms ease-in; 
+      }
+
+      @media screen and (max-width: 1100px) {
+          body {
+              background: no-repeat top right/cover url({{page.tablet-background-url}});
+          }
+      }
+
+      @media screen and (max-width: 700px) {
+          body {
+              background: no-repeat top right/cover url({{page.mobile-background-url}});
+          }
+      }
+    </style>
+  
+  </head>
+  <body onload="fadePage()">
+    {% include main-navigation.html %}
+    <main id="main">{{ content }}</main>
+    <script type="module" src="{{ "/assets/js/mobile-navigation.js" | relative_url }}"></script>
+  </body>
+</html>
+
+  

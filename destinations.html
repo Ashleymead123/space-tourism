@@ -1,0 +1,45 @@
+---
+layout: default
+title: "Destinations"
+
+desktop-background-url: /assets/destination/background-destination-desktop.jpg
+tablet-background-url: /assets/destination/background-destination-tablet.jpg
+mobile-background-url: /assets/destination/background-destination-mobile.jpg
+---
+
+  <div class="container">
+    <h1 class="is-page-title headingXS is-clr-primary-600 is-uppercase"><bold class="is-bold has-opacity-25">01</bold> Pick your destination</h1>
+  </div>
+
+  <div class="container destinations-slider-container">
+    <img id="destinationImgField" src="assets/destination/image-moon.png" alt="">
+    <div>
+      <nav class="destinations-slider-tab-container">
+        <ol  id="tabContainer">
+          <!--Tabs are added with Javascript-->
+        </ol>
+      </nav>
+      <div class="destinations-text-content-top">
+        <h2  id="destinationNameField" class="headingL is-uppercase is-clr-primary-600">Moon</h2>
+        <p  id="destinationDescriptionField" class="body-text is-clr-primary-500">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you’re there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+      </div>
+      <hr class="is-clr-primary-600 has-opacity-25">
+      <div class="destinations-text-content-bottom">
+          <div>
+            <h3 class="sub-headingS is-clr-primary-500 is-uppercase">Avg. distance</h3>
+            <p id="destinationDistanceField" class="sub-headingL is-clr-primary-600 is-uppercase">384,400 km</p>
+          </div>
+  
+          <div>
+            <h3 class="sub-headingS is-clr-primary-500 is-uppercase">Est. travel time</h3>
+            <p id="destinationTimeField" class="sub-headingL is-clr-primary-600 is-uppercase">3 days</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="{{ "/assets/js/destinations.js" | relative_url }}"></script>
